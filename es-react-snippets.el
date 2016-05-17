@@ -1,8 +1,8 @@
-;;; react-snippets.el --- Yasnippets for React
+;;; es-react-snippets.el --- Yasnippets for React, in ES6+
 
-;; Copyright (C) 2014 John Mastro
+;; Copyright (C) 2016 Michael Chan and John Mastro
 
-;; Author: John Mastro <john.b.mastro@gmail.com>
+;; Author: Machel Chan <mijoch@gmail.com> and John Mastro <john.b.mastro@gmail.com>
 ;; Keywords: snippets
 ;; Version: 0.0.1
 ;; Package-Requires: ((yasnippet "0.7.0"))
@@ -22,24 +22,24 @@
 
 ;;; Commentary:
 
-;; Yasnippets for [React](http://facebook.github.io/react/).
+;; Yasnippets for [React](http://facebook.github.io/react/), in ES6+.
 
 ;;; Code:
 
 (require 'yasnippet)
 
-(defvar react-snippets-root
+(defvar es-react-snippets-root
   (file-name-directory (or load-file-name (buffer-file-name))))
 
 ;;;###autoload
-(defun react-snippets-initialize ()
-  (let ((snippets-dir (expand-file-name "snippets" react-snippets-root)))
+(defun es-react-snippets-initialize ()
+  (let ((snippets-dir (expand-file-name "snippets" es-react-snippets-root)))
     (when (boundp 'yas-snippet-dirs)
       (add-to-list 'yas-snippet-dirs snippets-dir t))
     (yas-load-directory snippets-dir)))
 
 ;;;###autoload
 (eval-after-load 'yasnippet
-  '(react-snippets-initialize))
+  '(es-react-snippets-initialize))
 
-(provide 'react-snippets)
+(provide 'es-react-snippets)

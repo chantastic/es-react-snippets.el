@@ -1,4 +1,4 @@
-# react-snippets.el
+# es-react-snippets.el
 
 Yasnippets for [React] [].
 
@@ -8,48 +8,46 @@ Yasnippets for [React] [].
 
 ### Dependencies
 
-The only dependency is [Yasnippet] [] version 0.7.0 or above.
+* [Yasnippet] [] version 0.7.0 or higher.
 
 [Yasnippet]: https://github.com/capitaomorte/yasnippet
 
-### ELPA
+### MELPA
 
-The preferred way to install `react-snippets` is via [MELPA] [].
+Install `es-react-snippets` is via [MELPA] [].
 
 [MELPA]: http://melpa.milkbox.net/
 
-To enable MELPA, if you haven't already, add something like the following to
-your Emacs configuration:
+If you don't have MELPA installed, use this [Getting Started guide] [].
 
-    (require 'package)
-    (add-to-list 'package-archives
-                 '("melpa" . "http://melpa.milkbox.net/packages/") t)
-    (package-initialize)
+[Getting Started][https://melpa.org/#/getting-started]
 
-Then it (and Yasnippet, if you don't already have it) can be installed with
+If you don't have Yasnippet installed, you can now use MELPA to do so. Installation instructions are [here](https://github.com/capitaomorte/yasnippet#installation).
 
-    M-x package-install RET react-snippets RET
+Finally, install `es-react-snippets` with this command.
+
+    M-x package-install RET es-react-snippets RET
 
 ### Manual
 
 First, clone this repository somewhere.
 
     $ cd /path/to/somewhere
-    $ git clone https://github.com/johnmastro/react-snippets.el.git
+    $ git clone https://github.com/chantastic/es-react-snippets.el.git
 
 Then, in your Emacs init file, add that path to your `load-path`.
 
-    (add-to-list 'load-path "/path/to/somewhere/react-snippets.el")
+    (add-to-list 'load-path "/path/to/somewhere/es-react-snippets.el")
 
 ## Setup
 
 Simply require the package.
 
-    (require 'react-snippets)
+    (require 'es-react-snippets)
 
 ## License
 
-Copyright (C) 2014 John Mastro
+Copyright (C) 2016 Michael Chan and John Mastro
 
 This program is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
