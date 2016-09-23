@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ReactDOM.unmountComponentAtNode
+# key: ucan
+# --
+ReactDOM.unmountComponentAtNode(${1:document.getElementbyId("${2:myId}")});
